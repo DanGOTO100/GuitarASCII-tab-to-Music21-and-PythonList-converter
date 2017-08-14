@@ -34,10 +34,10 @@ They use as input the string obtained as output in the conversion. If you conver
 I recommend using the music21 format as the analysis uses Music21 library which is powerful and gives a lot of more info.
 
 These functions will give you info like:
- -Song key (only in songstatsmusic21)
- -Top Notes
- -Top phrases, that you can modify the lenght of the analysis by changing value of variable "pharselenght"
- -Modes and scales to use ((only in songstatsmusic21)
+ Song key (only in songstatsmusic21), 
+ Top Notes, 
+ Top phrases ( you can modify the lenght of the phrase analysis by changing value of variable "pharselenght"), 
+ Modes and scales to use ((only in songstatsmusic21)
   
   
 Sample output of songstatmusic21:
@@ -50,7 +50,7 @@ Scales and Modes:
 
 Possible Phrygian scales: [(1539, <music21.scale.PhrygianScale B phrygian>), (1515, <music21.scale.PhrygianScale F# phrygian>), (1453, <music21.scale.PhrygianScale E phrygian>), (1293, <music21.scale.PhrygianScale C# phrygian>)]
 Possible Lydian scales: [(1539, <music21.scale.LydianScale C lydian>), (1515, <music21.scale.LydianScale G lydian>), (1453, <music21.scale.LydianScale F lydian>), (1293, <music21.scale.LydianScale D lydian>)]
-Possible Mixolydian scales: [(1539, <music21.scale.MixolydianScale D mixolydian>), (1515, <music21.scale.MixolydianScale A mixolydian>), (1453, <music21.scale.MixolydianScale G mixolydian>), (1293, <music21.scale.MixolydianScale E mixolydian>)]
+
  
 top #10 phrases of  2  notes lenght (you can change this in var phraselenght)
  
@@ -64,16 +64,26 @@ HOW TO USE THE FUNCTIONS:
 Example of how to use the functions:
 
 #conversion
+
 print('RESULTS:')
+
 print('list produced: ',producedlist)
+
 print('list converted: ',convertedlist)
+
 print('list music21: ',convertedmusic21)
+
 print(' ')
+
 print('---------------------------------')
 
+
 #statistic
+
 songstats(convertedlist)
+
 songstatsmusic21(convertedmusic21)
+
 
 
 ASCII TAB REQUIREMENTS:
