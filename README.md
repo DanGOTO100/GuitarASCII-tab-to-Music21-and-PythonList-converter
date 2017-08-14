@@ -1,7 +1,7 @@
 # ASCIITabsConverter
 
-ASCII Guitar Tabs converter to Music21 Tiny Notation or Python List of Note.
-Also, provides some computation on the guitar tab like song's key, song's top phrases (of variable lenght) and  best scales/ modes to play along.
+ASCII Guitar Tabs converts Guitar ASCII tabs to Music21 Tiny Notation format or Python List of standard notation notes.
+Also, provides some computation on the guitar tab like song's key, song's top phrases (of variable lenght, you can choose) and  best scales/ modes to play along. See below some sample outputs. It uses Python 3.6.1
 
 CONVERTER:
 ----------
@@ -48,14 +48,23 @@ Possible song Key:  e minor
  
 Scales and Modes:
 
+Possible Major scales: [(1539, <music21.scale.MajorScale G major>), (1515, <music21.scale.MajorScale D major>), (1453, <music21.scale.MajorScale C major>), (1293, <music21.scale.MajorScale A major>)]
+Possible Dorian scales: [(1539, <music21.scale.DorianScale A dorian>), (1515, <music21.scale.DorianScale E dorian>), (1453, <music21.scale.DorianScale D dorian>), (1293, <music21.scale.DorianScale B dorian>)]
 Possible Phrygian scales: [(1539, <music21.scale.PhrygianScale B phrygian>), (1515, <music21.scale.PhrygianScale F# phrygian>), (1453, <music21.scale.PhrygianScale E phrygian>), (1293, <music21.scale.PhrygianScale C# phrygian>)]
 Possible Lydian scales: [(1539, <music21.scale.LydianScale C lydian>), (1515, <music21.scale.LydianScale G lydian>), (1453, <music21.scale.LydianScale F lydian>), (1293, <music21.scale.LydianScale D lydian>)]
+Possible Mixolydian scales: [(1539, <music21.scale.MixolydianScale D mixolydian>), (1515, <music21.scale.MixolydianScale A mixolydian>), (1453, <music21.scale.MixolydianScale G mixolydian>), (1293, <music21.scale.MixolydianScale E mixolydian>)]
+Possible Aeolian scales: [(1539, <music21.scale.MinorScale E minor>), (1515, <music21.scale.MinorScale B minor>), (1453, <music21.scale.MinorScale A minor>), (1293, <music21.scale.MinorScale F# minor>)]
+Possible Locrian scales: [(1539, <music21.scale.LocrianScale F# locrian>), (1515, <music21.scale.LocrianScale C# locrian>), (1453, <music21.scale.LocrianScale B locrian>), (1293, <music21.scale.LocrianScale G# locrian>)]
+Possible Blues Penta scales: [(1405, <music21.scale.WeightedHexatonicBlues E Weighted Hexatonic Blues>), (1262, <music21.scale.WeightedHexatonicBlues B Weighted Hexatonic Blues>), (1262, <music21.scale.WeightedHexatonicBlues C- Weighted Hexatonic Blues>), (1112, <music21.scale.WeightedHexatonicBlues A Weighted Hexatonic Blues>)]
 
  
-top #10 phrases of  2  notes lenght (you can change this in var phraselenght)
+top #10 phrases of  10  notes lenght (you can change this in var phraselenght)
  
-['a4', 'a4'] :  81
-['a4', "b'4"] :  74"
+['A', 'B', 'Bb', 'A', 'B', 'Bb', 'A', 'B', 'Bb', 'A'] :  21
+['B', 'Bb', 'A', 'B', 'Bb', 'A', 'B', 'Bb', 'A', 'B'] :  21
+['Bb', 'A', 'B', 'Bb', 'A', 'B', 'Bb', 'A', 'B', 'Bb'] :  21
+['F', 'E', 'C', 'E', 'F', 'B', 'F', 'E', 'C', 'E'] :  5
+['E', 'B', 'Gb', 'G', 'B', 'E', 'G', 'Gb', 'E', 'B'] :  4
 
 ```
 
