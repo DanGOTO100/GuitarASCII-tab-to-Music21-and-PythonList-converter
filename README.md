@@ -7,7 +7,7 @@ CONVERTER:
 ----------
 It defines and uses 5 basic functions to convert:
 
-*openandread* - To read the tab file in ASCII format, see below specific requirements of the ASCII format. You need to provide the full path.
+_*openandread*_ - To read the tab file in ASCII format, see below specific requirements of the ASCII format. You need to provide the full path.
 
 *producesortedtablist* -Produce list of notes in format string+fret, in the right playing order. Example: "D7" - this is: string D fret 7 . An example is: ['D7', 'D9', 'G7', 'B10', 'B10', 'B12', 'B12']
  
@@ -27,17 +27,16 @@ These string can then be imported into Musc21 which is a powerful music library 
 STATS:
 ------
 For the stats it uses 2 functions:
-*songstats* and 
-*songstatsmusic21* 
+_*songstatsmusic21*_ and _*songstats*_
 
 They use as input the string obtained as output in the conversion. If you converted to Music21 format then use "songstatmusic21".
 I recommend using the music21 format as the analysis uses Music21 library which is powerful and gives a lot of more info.
 
 These functions will give you info like:
- Song key (only in songstatsmusic21), 
- Top Notes, 
- Top phrases ( you can modify the lenght of the phrase analysis by changing value of variable "pharselenght"), 
- Modes and scales to use ((only in songstatsmusic21)
+* Song key (only in songstatsmusic21), 
+* Top Notes, 
+* Top phrases ( you can modify the lenght of the phrase analysis by changing value of variable "pharselenght"), 
+* Modes and scales to use ((only in songstatsmusic21)
   
   
 Sample output of songstatmusic21:
@@ -63,26 +62,14 @@ HOW TO USE THE FUNCTIONS:
 ---------------------------
 Example of how to use the functions:
 
-#conversion
+Code()
+sampletabread = openandread('C:\\Users\\dmanerob\\Downloads\\Tabs\\tab.txt')  #Openfile
+producedlist = producesortedtablist(sampletabread)                                #call function to produce list of noted in format string+fret, in the right playing order. Example: "D7" - this is: string D fret 7
+convertedlist = converttonotes(producedlist)                                  #call function to convert to notes
+convertedmusic21 = converttomusic21(producedlist)
+counterstechniques = getguitarstyledata(sampletabread)
+Code()
 
-print('RESULTS:')
-
-print('list produced: ',producedlist)
-
-print('list converted: ',convertedlist)
-
-print('list music21: ',convertedmusic21)
-
-print(' ')
-
-print('---------------------------------')
-
-
-#statistic
-
-songstats(convertedlist)
-
-songstatsmusic21(convertedmusic21)
 
 
 
