@@ -7,7 +7,7 @@ CONVERTER:
 ----------
 It defines and uses 5 basic functions to convert:
 
-*openandread - To read the tab file in ASCII format, see below specific requirements of the ASCII format. You need to provide the full path.
+*openandread* - To read the tab file in ASCII format, see below specific requirements of the ASCII format. You need to provide the full path.
 
 *producesortedtablist -Produce list of notes in format string+fret, in the right playing order. Example: "D7" - this is: string D fret 7
 An example is: ['D7', 'D9', 'G7', 'B10', 'B10', 'B12', 'B12']
@@ -42,8 +42,8 @@ Sample output of songstatmusic21:
 Possible song Key:  e minor
  
 Scales and Modes:
-----------------
- top #10 phrases of  2  notes lenght (you can change this in var phraselenght)
+
+top #10 phrases of  2  notes lenght (you can change this in var phraselenght)
  
 ['a4', 'a4'] :  81
 ['a4', "b'4"] :  74"
