@@ -11,9 +11,11 @@ It defines and uses 5 basic functions to convert:
 
 *producesortedtablist* -Produce list of notes in format string+fret, in the right playing order. Example: "D7" - this is: string D fret 7 . An example is: ['D7', 'D9', 'G7', 'B10', 'B10', 'B12', 'B12']
  
-*converttonotes*  - Converts the "sorted tab list" output of the function "producesortedtablist" into a string of notes in standard format comma separated: "A,B,D,A,A,B,B,B,E,D,B,G,E,B,Gb"
+*converttonotes*  - Converts the "sorted tab list" output of the function "producesortedtablist" into a string of notes, in standard format, comma separated: "A,B,D,A,A,B,B,B,E,D,B,G,E,B,Gb". Note Octave information is not included, but it is included in function *converttomusic21*
 
-*converttomusic21* - Produce a string, comma separated, in the Music21 (MIT magic musical library) Tiny Notation Format. As ASCII Tabs normally do not have info  about the duration, it is converted by default in 4/4 format. Example outout below:
+*converttomusic21* - Produce a string, comma separated, in the Music21 (MIT magic musical library) Tiny Notation Format. As ASCII Tabs normally do not have info  about the duration, it is converted by default in 4/4 format. 
+
+Example outout:
 "a4 b4 d4 a4 a4 b'4 b'4 b'4 e'4 d4 b4 g4 e4 b4 f#4"
 These string can then be imported into Musc21 which is a powerful music library and will allow us to do a lot of analysis.
 
