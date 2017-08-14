@@ -41,6 +41,7 @@ These functions will give you info like:
   
 Sample output of songstatmusic21:
 
+```
  "Top 20 music21 notes:  [('a4', 281), ("b'4", 214), ("e'4", 155), ("d'4", 153), ("g'4", 120), ('d4', 112), ('g4', 105), ('b4', 91), ('e4', 90), ("f'#4", 73), ('f#4', 49), ("a'#4", 44), ('c4', 32), ("a'4", 32), ("f'4", 21), ("c'4", 20), ('f4', 19), ("c'#4", 19), ('c#4', 9), ("e''4", 8)]
 
 Possible song Key:  e minor
@@ -56,6 +57,7 @@ top #10 phrases of  2  notes lenght (you can change this in var phraselenght)
 ['a4', 'a4'] :  81
 ['a4', "b'4"] :  74"
 
+```
 
 
 HOW TO USE THE FUNCTIONS:
