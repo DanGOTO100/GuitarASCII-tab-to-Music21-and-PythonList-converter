@@ -62,13 +62,13 @@ HOW TO USE THE FUNCTIONS:
 ---------------------------
 Example of how to use the functions:
 
-`code()`
+```
 sampletabread = openandread('C:\\Users\\dmanerob\\Downloads\\Tabs\\tab.txt')  #Openfile
 producedlist = producesortedtablist(sampletabread)                                #call function to produce list of noted in format string+fret, in the right playing order. Example: "D7" - this is: string D fret 7
 convertedlist = converttonotes(producedlist)                                  #call function to convert to notes
 convertedmusic21 = converttomusic21(producedlist)
 counterstechniques = getguitarstyledata(sampletabread)
-`code()`
+```
 
 
 
