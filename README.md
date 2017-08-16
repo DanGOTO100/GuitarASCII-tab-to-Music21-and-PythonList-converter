@@ -1,6 +1,6 @@
 # ASCIITabsConverter
 
-ASCII Guitar Tabs converts Guitar ASCII tabs to Music21 Tiny Notation format or Python List of standard notation notes.
+ASCII Guitar Tabs converts Guitar ASCII tabs to [Music21](http://web.mit.edu/music21/) Tiny Notation format (Music21 MIT library) or Python List of standard notation notes.
 Also, provides some computation on the guitar tab like song's key, song's top phrases (of variable lenght, you can choose) and  best scales/ modes to play along. See below some sample outputs. It uses Python 3.6.1
 
 CONVERTER:
@@ -13,7 +13,7 @@ It defines and uses 5 basic functions to convert:
  
 **converttonotes**  - Converts the "sorted tab list" output of the function "producesortedtablist" into a string of notes, in standard format, comma separated: "A,B,D,A,A,B,B,B,E,D,B,G,E,B,Gb". Note Octave information is not included, but it is included in function *converttomusic21*
 
-**converttomusic21** - Produce a string, comma separated, in the Music21 (MIT magic musical library) Tiny Notation Format. As ASCII Tabs normally do not have info  about the duration, it is converted by default in 4/4 format. 
+**converttomusic21** - Produce a string, comma separated, in the [Music21](http://web.mit.edu/music21/) - MIT magic musical library- Tiny Notation Format. As ASCII Tabs normally do not have info  about the duration, it is converted by default in 4/4 format. 
 
 Example outout:
 "a4 b4 d4 a4 a4 b'4 b'4 b'4 e'4 d4 b4 g4 e4 b4 f#4"
@@ -30,11 +30,11 @@ For the stats it uses 2 functions:
 **songstatsmusic21** and **songstats**
 
 They use as input the string obtained as output in the conversion. If you converted to Music21 format then use "songstatmusic21".
-I recommend using the music21 format as the analysis uses Music21 library which is powerful and gives a lot of more info.
+I recommend using the [Music21](http://web.mit.edu/music21/) format as the analysis uses [Music21](http://web.mit.edu/music21/) library which is powerful and gives a lot of more info.
 
 These functions will give you info like:
 * Song key (only in songstatsmusic21), 
-* Top Notes, 
+* Top Notes 
 * Top phrases ( you can modify the lenght of the phrase analysis by changing value of variable "pharselenght"), 
 * Modes and scales to use ((only in songstatsmusic21)
   
